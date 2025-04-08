@@ -1,0 +1,9 @@
+{
+    "name": "Lightning Rod",
+    "description": "Due to your body being able to store electrical energy without a problem, you are immune to lightning bolts.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "lightningBolt"
+    }
+}

@@ -1,0 +1,85 @@
+{
+    "name": "Thunder Wave",
+    "description": "You have access to the move Thunder Wave, which paralyzes the target in front of you for 10 seconds while consuming your entire electricity gauge.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "§eParalysis causes opponents to be unable to move horizontally at all.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:resource",
+        "resource": "eeveelutiontaurs:static_bar",
+        "comparison": "==",
+        "compare_to": 350
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:raycast",
+                "distance": 20,
+                "block": true,
+                "entity": true,
+                "shape_type": "outline",
+                "fluid_handling": "any",
+                "bientity_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:target_action",
+                            "action": {
+                                "type": "origins:and",
+                                "actions": [
+                                    {
+                                        "type": "origins:execute_command",
+                                        "command": "particle minecraft:flash ~ ~ ~ 0 0 0 0 1 normal"
+                                    },
+                                    {
+                                        "type": "origins:play_sound",
+                                        "sound": "minecraft:entity.lightning_bolt.thunder",
+                                        "volume": 1,
+                                        "pitch": 2
+                                    },
+                                    {
+                                        "type": "origins:grant_power",
+                                        "power": "eeveelutiontaurs:paralyzed",
+                                        "source": "eeveelutiontaurs:thunder_wave"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "origins:actor_action",
+                            "action": {
+                                "type": "origins:modify_resource",
+                                "resource": "eeveelutiontaurs:static_bar",
+                                "modifier": {
+                                    "operation": "set_total",
+                                    "value": 0
+                                }
+                            }
+                        }
+                    ]
+                },
+                "space": "world",
+                "command_along_ray": "particle minecraft:electric_spark ~ ~ ~ 0.1 0.1 0.1 0.1 5 normal"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.beacon.power_select",
+                "volume": 1,
+                "pitch": 1
+            }
+        ]
+    },
+    "cooldown": 0,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

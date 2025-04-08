@@ -1,0 +1,14 @@
+{
+    "name": "Photosynthesis",
+    "description": "As a Leafeontaur, you are capable of photosynthesizing while in the sun, gaining hunger back while exposed to it.",
+    "condition": {
+        "type": "origins:exposed_to_sun"
+    },
+    "type": "origins:action_over_time",
+    "interval": 200,
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 0.5
+    }
+}

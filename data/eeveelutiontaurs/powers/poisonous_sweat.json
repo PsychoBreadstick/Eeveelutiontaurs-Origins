@@ -1,0 +1,73 @@
+{
+    "name": "Poisonous Sweat",
+    "description": "You can spray poisonous sweat, from your pores, into the eyes of opponents, blinding them and poisoning them (30 second cooldown).",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "§8Must sneak to activate",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "condition": {
+        "type": "origins:sneaking"
+    },
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:area_of_effect",
+        "radius": 10,
+        "bientity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effects": [
+                            {
+                                "effect": "minecraft:poison",
+                                "duration": 200,
+                                "amplifier": 0,
+                                "show_particles": true,
+                                "show_icon": true
+                            },
+                            {
+                                "effect": "minecraft:blindness",
+                                "duration": 300,
+                                "amplifier": 0,
+                                "show_particles": true,
+                                "show_icon": true
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:actor_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:play_sound",
+                                "sound": "minecraft:block.fire.extinguish",
+                                "volume": 1,
+                                "pitch": 0.5
+                            },
+                            {
+                                "type": "origins:execute_command",
+                                "command": "particle minecraft:squid_ink ~ ~1 ~ 8 0.5 8 0.3 200"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 23
+    },
+    "key": {
+        "key": "key.origins.primary_active"
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Leeching",
+    "description": "You're currently using Leech Seed!",
+    "hidden": true,
+    "type": "origins:multiple",
+    "bar": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10,
+        "start_value": 10,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+            "bar_index": 4
+        },
+        "min_action": {
+            "type": "origins:remove_power",
+            "power": "eeveelutiontaurs:leeching"
+        }
+    },
+    "countdown": {
+        "type": "origins:action_over_time",
+        "interval": 40,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:modify_resource",
+                    "resource": "eeveelutiontaurs:leeching_bar",
+                    "modifier": {
+                        "operation": "addition",
+                        "value": -1
+                    }
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 1
+                }
+            ]
+        }
+    },
+    "remove_on_death": {
+        "type": "origins:action_on_death",
+        "bientity_action": {
+            "type": "origins:target_action",
+            "action": {
+                "type": "origins:remove_power",
+                "power": "eeveelutiontaurs:leeching"
+            }
+        }
+    }
+}

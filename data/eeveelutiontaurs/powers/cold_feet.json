@@ -1,0 +1,46 @@
+{
+    "name": "Cold Feet",
+    "description": "Your low body temperature causes you to freeze water under your feet.",
+    "type": "origins:multiple",
+    "frost_walker": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "type": "origins:modify_enchantment_level",
+        "enchantment": "minecraft:frost_walker",
+        "modifier": {
+            "operation": "add_base_early",
+            "value": 1
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "retain_state": true
+    },
+    "toggle_info": {
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        },
+        "type": "origins:action_over_time",
+        "interval": 5,
+        "rising_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s actionbar [\"\",{\"text\":\"Cold Feet: \"},{\"text\":\"ON\",\"color\":\"green\"}]"
+                }
+            ]
+        },
+        "falling_action": {
+            "type": "origins:execute_command",
+            "command": "title @s actionbar [\"\",{\"text\":\"Cold Feet: \"},{\"text\":\"OFF\",\"color\":\"red\"}]"
+        }
+    }
+}

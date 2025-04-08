@@ -1,0 +1,14 @@
+{
+    "origins": [
+        "eeveelutiontaurs:eeveetaur",
+        "eeveelutiontaurs:espeontaur",
+        "eeveelutiontaurs:flareontaur",
+        "eeveelutiontaurs:glaceontaur",
+        "eeveelutiontaurs:jolteontaur",
+        "eeveelutiontaurs:leafeontaur",
+        "eeveelutiontaurs:sylveontaur",
+        "eeveelutiontaurs:umbreontaur",
+        "eeveelutiontaurs:vaporeontaur"
+    ],
+    "enabled": true
+}

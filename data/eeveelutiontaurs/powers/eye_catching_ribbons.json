@@ -1,0 +1,30 @@
+{
+    "name": "Eye-Catching Ribbons",
+    "description": "Due to how large and noticeable your ribbons are, hostile mobs can detect you from considerably further away.",
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:visibility 2"
+    },
+    "execute_chosen_when_orb": true,
+    "entity_action_gained": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:visibility 2"
+    },
+    "entity_action_lost": {
+        "type": "origins:execute_command",
+        "command": "scale reset pehkui:visibility"
+    },
+    "entity_action_added": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:visibility 2"
+    },
+    "entity_action_removed": {
+        "type": "origins:execute_command",
+        "command": "scale reset pehkui:visibility"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:visibility 2"
+    }
+}

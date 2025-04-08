@@ -1,0 +1,49 @@
+{
+    "name": "Daylight Sensitivity",
+    "description": "While you have advantages at night, in the daylight, you’re weakened, cannot regenerate health naturally, and take increased damage.",
+    "type": "origins:multiple",
+    "no_regen": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:disable_regen"
+    },
+    "weakened": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 100,
+        "tick_rate": 20,
+        "effects": [
+            {
+                "effect": "minecraft:weakness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            },
+            {
+                "effect": "minecraft:slowness",
+                "duration": 100,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": true
+            }
+        ]
+    },
+    "increased_damage": {
+        "condition": {
+            "type": "origins:exposed_to_sun"
+        },
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 0.5
+        }
+    }
+}

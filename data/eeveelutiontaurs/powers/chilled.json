@@ -1,0 +1,9 @@
+{
+    "name": "Chilled",
+    "description": "Due to your incredibly low natural body temperature, you’re immune to freezing in powdered snow.",
+    "type": "origins:invulnerability",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "freeze"
+    }
+}

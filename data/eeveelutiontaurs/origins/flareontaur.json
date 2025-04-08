@@ -1,0 +1,18 @@
+{
+    "name": "§cFlareontaur",
+    "description": "Evolving from Eeveetaurs with Fire Type abilities, Flareontaurs have body temperatures that can reach up to 1,650 degrees Fahrenheit.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:superheated",
+        "eeveelutiontaurs:guts",
+        "eeveelutiontaurs:flame_pouch",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:melting_point",
+        "eeveelutiontaurs:water_vulnerability"
+    ],
+    "icon": {
+        "item": "minecraft:red_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

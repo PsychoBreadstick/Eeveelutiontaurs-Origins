@@ -1,0 +1,14 @@
+{
+    "name": "Like a Shadow",
+    "description": "All attack damage is boosted during the night.",
+    "condition": {
+        "type": "origins:time_of_day",
+        "comparison": ">=",
+        "compare_to": 13000
+    },
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "addition",
+        "value": 3
+    }
+}
