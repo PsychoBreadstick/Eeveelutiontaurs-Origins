@@ -1,0 +1,1074 @@
+{
+    "name": "Melting Point",
+    "description": "Due to your incredibly high body temperature, many items that easily combust or melt under 1,650 degrees degrade over time while in your inventory.",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "§cCertain items may behave interestingly",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:multiple",
+    "helmet": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "head",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "head",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "chestplate": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "chest",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "chest",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "leggings": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "legs",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "legs",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "boots": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "feet",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "feet",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "mainhand",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "offhand",
+            "action": {
+                "type": "origins:damage",
+                "amount": 1
+            }
+        }
+    },
+    "tnt_mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:tnt"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon tnt ~ ~ ~ {Fuse:80}"
+                }
+            ]
+        }
+    },
+    "tnt_offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:tnt"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "offhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "summon tnt ~ ~ ~ {Fuse:80}"
+                }
+            ]
+        }
+    },
+    "tooltip": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "eeveelutiontaurs:meltable"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "eeveelutiontaurs:meltable_stackable"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "eeveelutiontaurs:fluid_buckets"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "eeveelutiontaurs:advancement_buckets"
+                    }
+                },
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "eeveelutiontaurs:fluid_bottles"
+                    }
+                }
+            ]
+        },
+        "text": "§cMaybe it isn't that great of an idea to hold or wear this",
+        "order": 0
+    },
+    "tooltip_tnt": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:tnt"
+            }
+        },
+        "text": "§4It's probably a terrible idea to hold or wear this",
+        "order": 0
+    },
+    "offhand_stackable": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable_stackable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "offhand",
+            "action": {
+                "type": "origins:consume",
+                "amount": 1
+            }
+        }
+    },
+    "mainhand_stackable": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:meltable_stackable"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:equipped_item_action",
+            "equipment_slot": "mainhand",
+            "action": {
+                "type": "origins:consume",
+                "amount": 1
+            }
+        }
+    },
+    "vaporize_bucket_advancement_mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:advancement_buckets"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:bucket",
+                        "amount": 1
+                    },
+                    "preferred_slot": "mainhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:grant_advancement",
+                    "advancement": "eeveelutiontaurs:fish_fillet",
+                    "selection": "only"
+                }
+            ]
+        }
+    },
+    "vaporize_buckets_mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:fluid_buckets"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:bucket",
+                        "amount": 1
+                    },
+                    "preferred_slot": "mainhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    },
+    "vaporize_buckets_offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:fluid_buckets"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "offhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:bucket",
+                        "amount": 1
+                    },
+                    "preferred_slot": "offhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    },
+    "vaporize_bucket_advancement_offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:advancement_buckets"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "offhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:bucket",
+                        "amount": 1
+                    },
+                    "preferred_slot": "offhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:grant_advancement",
+                    "advancement": "eeveelutiontaurs:fish_fillet",
+                    "selection": "only"
+                }
+            ]
+        }
+    },
+    "cooking_mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:uncooked_foods"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:modify",
+                        "modifier": "eeveelutiontaurs:force_smelt"
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.ambient",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.5 0.3 0 100"
+                }
+            ]
+        }
+    },
+    "cooking_offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "tag": "eeveelutiontaurs:uncooked_foods"
+                                }
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 100,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "offhand",
+                    "action": {
+                        "type": "origins:modify",
+                        "modifier": "eeveelutiontaurs:force_smelt"
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.ambient",
+                    "volume": 1,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~ ~ 0.3 0.5 0.3 0 100"
+                }
+            ]
+        }
+    },
+    "tooltip_cooking": {
+        "type": "origins:tooltip",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "eeveelutiontaurs:uncooked_foods"
+            }
+        },
+        "text": "§eMaybe it isn't that bad of an idea to hold or wear this?",
+        "order": 0
+    },
+    "bottle_vaporize_mainhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:fluid_bottles"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "mainhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:glass_bottle",
+                        "amount": 1
+                    },
+                    "preferred_slot": "mainhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    },
+    "bottle_vaporize_offhand": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:ingredient",
+                                "ingredient": [
+                                    {
+                                        "tag": "eeveelutiontaurs:fluid_bottles"
+                                    }
+                                ]
+                            },
+                            {
+                                "inverted": true,
+                                "type": "origins:enchantment",
+                                "enchantment": "minecraft:fire_protection",
+                                "comparison": ">=",
+                                "compare_to": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "inverted": true,
+                    "type": "origins:status_effect",
+                    "effect": "minecraft:fire_resistance"
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:equipped_item_action",
+                    "equipment_slot": "offhand",
+                    "action": {
+                        "type": "origins:consume",
+                        "amount": 1
+                    }
+                },
+                {
+                    "type": "origins:give",
+                    "stack": {
+                        "item": "minecraft:glass_bottle",
+                        "amount": 1
+                    },
+                    "preferred_slot": "offhand"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~ ~ 0.5 1 0.5 0 30"
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 1,
+                    "pitch": 1
+                }
+            ]
+        }
+    }
+}

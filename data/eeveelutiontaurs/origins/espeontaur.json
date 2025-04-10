@@ -1,0 +1,19 @@
+{
+    "name": "§5Espeontaur",
+    "description": "Evolving from Eeveetaurs with Psychic Type abilities, Espeontaurs are covered in fine and sensitive hairs that can predict its environment.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:sixth_sense",
+        "eeveelutiontaurs:confusion",
+        "eeveelutiontaurs:dawns_clarity",
+        "eeveelutiontaurs:mental_shield",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:clouded_mind",
+        "eeveelutiontaurs:psychic_overreliance"
+    ],
+    "icon": {
+        "item": "minecraft:purple_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

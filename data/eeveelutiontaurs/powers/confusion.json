@@ -1,0 +1,105 @@
+{
+    "name": "Confusion",
+    "description": "As an Espeontaur, you have access to the move Confusion, which damages, randomly rotates, and inflicts Confused onto the opponent for 10 seconds (30 second cooldown).",
+    "badges": [
+        {
+            "type": "origins:tooltip",
+            "text": "§5Confused gives opponents a 50% chance to take damage by attempting to attack someone.",
+            "sprite": "origins:textures/gui/badge/info.png"
+        }
+    ],
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.portal.travel",
+                "volume": 1,
+                "pitch": 1.7
+            },
+            {
+                "type": "origins:area_of_effect",
+                "radius": 20,
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:and",
+                        "actions": [
+                            {
+                                "type": "origins:grant_power",
+                                "power": "eeveelutiontaurs:confused",
+                                "source": "eeveelutiontaurs:confusion"
+                            },
+                            {
+                                "type": "origins:choice",
+                                "actions": [
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~60 ~"
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~-60 ~"
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~90 ~"
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~-90 ~"
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~120 ~"
+                                        }
+                                    },
+                                    {
+                                        "weight": 1,
+                                        "element": {
+                                            "type": "origins:execute_command",
+                                            "command": "teleport @s ~ ~ ~ ~-120 ~"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:damage",
+                                "amount": 4,
+                                "damage_type": "magic"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:witch ~ ~ ~ 0.5 0.5 0.5 0 30"
+            }
+        ]
+    },
+    "cooldown": 600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+        "bar_index": 7
+    },
+    "key": {
+        "key": "key.origins.secondary_active"
+    }
+}

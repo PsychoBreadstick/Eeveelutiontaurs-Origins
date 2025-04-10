@@ -1,0 +1,58 @@
+{
+    "name": "Guts",
+    "description": "When afflicted with any negative status effect, you deal +2 damage.",
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:weakness"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:nausea"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:poison"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:wither"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:slowness"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:blindness"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:darkness"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:hunger"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:levitation"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:mining_fatigue"
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:unluck"
+            }
+        ]
+    },
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+        "operation": "addition",
+        "value": 2
+    }
+}

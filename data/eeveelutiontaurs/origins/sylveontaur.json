@@ -1,0 +1,19 @@
+{
+    "name": "§dSylveontaur",
+    "description": "Evolving from Eeveetaurs with Fairy Type abilities, Sylveontaurs are able to release soothing auras from their ribbon-like feelers to calm fights.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:too_cute",
+        "eeveelutiontaurs:bane_of_darkness",
+        "eeveelutiontaurs:moonblast",
+        "eeveelutiontaurs:play_rough",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:poison_vulnerability",
+        "eeveelutiontaurs:eye_catching_ribbons"
+    ],
+    "icon": {
+        "item": "minecraft:pink_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

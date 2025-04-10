@@ -1,0 +1,19 @@
+{
+    "name": "§bGlaceontaur",
+    "description": "Evolving from Eeveetaurs with Ice Type abilities, Glaceontaurs have the ability to drop their body temperatures below -75 degrees Fahrenheit.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:chilled",
+        "eeveelutiontaurs:triple_axel",
+        "eeveelutiontaurs:icy_wind",
+        "eeveelutiontaurs:cold_feet",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:heat_intolerant",
+        "eeveelutiontaurs:freezing_blood"
+    ],
+    "icon": {
+        "item": "minecraft:light_blue_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

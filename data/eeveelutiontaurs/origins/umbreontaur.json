@@ -1,0 +1,19 @@
+{
+    "name": "§8Umbreontaur",
+    "description": "Evolving from Eeveetaurs with Dark Type abilities, Umbreontaurs are able to protect themselves by spraying poisonous sweat from their pores.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:like_a_shadow",
+        "eeveelutiontaurs:piercing_vision",
+        "eeveelutiontaurs:thief",
+        "eeveelutiontaurs:poisonous_sweat",
+        "eeveelutiontaurs:mysterious_glow",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:daylight_sensitivity"
+    ],
+    "icon": {
+        "item": "minecraft:gray_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

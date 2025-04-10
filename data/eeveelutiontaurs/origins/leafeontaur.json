@@ -1,0 +1,19 @@
+{
+    "name": "§2Leafeontaur",
+    "description": "Evolving from Eeveetaurs with Grass Type abilities, Leafeontaurs are able to photosynthesize and envelop themselves in clean air.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:photosynthesis",
+        "eeveelutiontaurs:one_with_nature",
+        "eeveelutiontaurs:leech_seed",
+        "eeveelutiontaurs:bullet_seed",
+        "eeveelutiontaurs:large_stance",
+        "eeveelutiontaurs:flammable",
+        "eeveelutiontaurs:poison_vulnerability"
+    ],
+    "icon": {
+        "item": "minecraft:green_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

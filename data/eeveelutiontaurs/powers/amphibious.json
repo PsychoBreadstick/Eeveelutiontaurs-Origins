@@ -1,0 +1,40 @@
+{
+    "name": "Amphibious",
+    "description": "Due to you retaining the lungs of your former Eeveetaur self, along with developing gills from your evolution, you’re capable of breathing both above and below the waves.",
+    "type": "origins:multiple",
+    "one": {
+        "type": "origins:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:submerged_in",
+                "fluid": "minecraft:water"
+            },
+            "if_action": {
+                "type": "origins:grant_power",
+                "power": "origins:water_breathing",
+                "source": "eeveelutiontaurs:vaporeontaur"
+            },
+            "else_action": {
+                "type": "origins:revoke_power",
+                "power": "origins:water_breathing",
+                "source": "eeveelutiontaurs:vaporeontaur"
+            }
+        }
+    },
+    "remove_water_breathing": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:revoke_power",
+            "power": "origins:water_breathing",
+            "source": "eeveelutiontaurs:vaporeontaur"
+        },
+        "entity_action_removed": {
+            "type": "origins:revoke_power",
+            "power": "origins:water_breathing",
+            "source": "eeveelutiontaurs:vaporeontaur"
+        }
+    }
+}

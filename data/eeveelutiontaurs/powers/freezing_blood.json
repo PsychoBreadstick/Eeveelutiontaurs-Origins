@@ -1,0 +1,29 @@
+{
+    "name": "Freezing Blood",
+    "description": "Due to your incredibly low body temperature, all positive potion effects very quickly freeze within you, cutting their durations in half.",
+    "type": "origins:modify_status_effect_duration",
+    "status_effects": [
+        "minecraft:speed",
+        "minecraft:haste",
+        "minecraft:strength",
+        "minecraft:jump_boost",
+        "minecraft:regeneration",
+        "minecraft:resistance",
+        "minecraft:fire_resistance",
+        "minecraft:water_breathing",
+        "minecraft:invisibility",
+        "minecraft:night_vision",
+        "minecraft:health_boost",
+        "minecraft:absorption",
+        "minecraft:saturation",
+        "minecraft:luck",
+        "minecraft:slow_falling",
+        "minecraft:conduit_power",
+        "minecraft:dolphins_grace",
+        "minecraft:hero_of_the_village"
+    ],
+    "modifier": {
+        "operation": "multiply_total",
+        "value": -0.5
+    }
+}

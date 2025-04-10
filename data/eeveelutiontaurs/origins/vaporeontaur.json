@@ -1,0 +1,21 @@
+{
+    "name": "§3Vaporeontaur",
+    "description": "Evolving from Eeveetaurs with Water Type abilities, Vaporeontaurs have cells similar in structure to water molecules, allowing them to melt away into water.",
+    "powers": [
+        "eeveelutiontaurs:quadrupedal",
+        "eeveelutiontaurs:amphibious",
+        "eeveelutiontaurs:master_of_the_seas",
+        "eeveelutiontaurs:swim_hidden",
+        "eeveelutiontaurs:aqua_ring",
+        "eeveelutiontaurs:hydration",
+        "eeveelutiontaurs:large_stance",
+        "origins:aquatic",
+        "eeveelutiontaurs:moist_skin",
+        "eeveelutiontaurs:aqueous"
+    ],
+    "icon": {
+        "item": "minecraft:cyan_wool"
+    },
+    "unchoosable": true,
+    "impact": 2
+}

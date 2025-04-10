@@ -1,0 +1,213 @@
+{
+    "name": "Mysterious Glow",
+    "description": "When under the light of the moon, you faintly glow. The phases of the moon control how bright you glow.",
+    "type": "origins:multiple",
+    "remove_light_box_above": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~-10 ~2 ~-10 ~10 ~10 ~10 air replace light"
+        }
+    },
+    "remove_light_box_below": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~-10 ~-10 ~-10 ~10 ~ ~10 air replace light"
+        }
+    },
+    "remove_light_box_north": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~-10 ~1 ~-10 ~-1 ~1 ~-1 air replace light"
+        }
+    },
+    "remove_light_box_south": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~1 ~1 ~1 ~10 ~1 ~10 air replace light"
+        }
+    },
+    "remove_light_box_east": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~1 ~1 ~-10 ~10 ~1 ~10 air replace light"
+        }
+    },
+    "remove_light_box_west": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~-10 ~1 ~-10 ~-1 ~1 ~10 air replace light"
+        }
+    },
+    "remove_light_line_south": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~ ~1 ~1 ~ ~1 ~5 air replace light"
+        }
+    },
+    "remove_light_line_north": {
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "fill ~ ~1 ~-1 ~ ~1 ~-5 air replace light"
+        }
+    },
+    "full_moon": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_full_moon"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 13000
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~1 ~ light[level=11] keep"
+        }
+    },
+    "gibbous": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_waning_gibbous"
+                        },
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_waxing_gibbous"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 13000
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~1 ~ light[level=8] keep"
+        }
+    },
+    "quarter": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_first_quarter"
+                        },
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_third_quarter"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 13000
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~1 ~ light[level=6] keep"
+        }
+    },
+    "crescent": {
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:exposed_to_sky"
+                },
+                {
+                    "type": "origins:or",
+                    "conditions": [
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_waning_crescent"
+                        },
+                        {
+                            "type": "origins:predicate",
+                            "predicate": "eeveelutiontaurs:is_waxing_crescent"
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:time_of_day",
+                    "comparison": ">=",
+                    "compare_to": 13000
+                }
+            ]
+        },
+        "type": "origins:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "setblock ~ ~1 ~ light[level=4] keep"
+        }
+    },
+    "remove_light_change_origin": {
+        "type": "origins:action_on_callback",
+        "execute_chosen_when_orb": true,
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air replace light"
+        },
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "fill ~10 ~10 ~10 ~-10 ~-10 ~-10 air replace light"
+        }
+    }
+}
